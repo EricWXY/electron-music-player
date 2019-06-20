@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>本地播放器</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+  <div class="container mt-4 mb-6 pb-6">
+    <h1>Eric播放器</h1>
+    <button type="button" id="add-music-button" class="btn btn-primary btn-lg btn-block mt-4">
+      添加歌曲到播放列表
+    </button>
+    <div id="tracks-list" class="mt-4 mb-6 "></div>
+  </div>
+  <div class="container fixed-bottom bg-white">
+    <hr />
+    <div class="row my-2" id="player-status"></div>
+    <div class="progress my-2" style="margin-bottom: 1rem">
+      <div id="player-progress" class="progress-bar" role="progressbar" style="width: 0%"></div>
+    </div>
+  </div>
+  <script>
+    require('../renderer/index.js')
+  </script>
+</body>
+
+</html>
