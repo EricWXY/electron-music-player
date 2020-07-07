@@ -14,7 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
-    "electron": "5.0.2"
+    "electron": "9.1.0"
   },
   "dependencies": {
     "bootstrap": "4.3.1",
